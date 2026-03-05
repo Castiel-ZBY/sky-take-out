@@ -2,5 +2,7 @@
 .vscode        # VSCode 工作区配置 ✅（也可以改成 .vscode/ 更严谨）
 *.iml          # IDEA 的模块文件 ✅
 *.class        # 编译产物 ✅
-*Test.java     # ⚠️ 这会忽略所有以 Test.java 结尾的源码（JUnit 测试类）通常不应该忽略
-**/test/       # ⚠️ 这会忽略任意 test 目录，等于把测试源码整个忽略掉（很危险）
+#*Test.java     # ⚠️ 这会忽略所有以 Test.java 结尾的源码（JUnit 测试类）通常不应该忽略
+#**/test/       # ⚠️ 这会忽略任意 test 目录，等于把测试源码整个忽略掉（很危险）
+target/
+**/target/
